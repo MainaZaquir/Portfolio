@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maina Zaquir - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">MainaZaquir</a>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home">
+        <div class="home-img">
+            <img src="main.jpg" alt="Maina Zaquir" loading="lazy">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Maina Zaquir</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>A versatile Full Stack Developer and DevOps Specialist passionate about building scalable, user-focused web applications and optimizing workflows.</p>
+            <div class="social-icons">
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="filters">
+            <button data-filter="all">All</button>
+            <button data-filter="frontend">Frontend</button>
+            <button data-filter="backend">Backend</button>
+            <button data-filter="devops">DevOps</button>
+        </div>
+        <div class="project-gallery">
+            <div class="project-card fade-in" data-category="frontend">Frontend Project 1</div>
+            <div class="project-card fade-in" data-category="backend">Backend Project 1</div>
+            <div class="project-card fade-in" data-category="devops">DevOps Project 1</div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <canvas id="skills-chart"></canvas>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial-container">
+            <!-- Testimonials will be dynamically added here -->
+        </div>
+        <form id="testimonial-form">
+            <textarea placeholder="Leave a testimonial..." required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="https://formspree.io/f/xgvawjaq" method="POST">
+            <label>
+                Your email:
+                <input type="email" name="email" required>
+            </label>
+            <label>
+                Your message:
+                <textarea name="message" required></textarea>
+            </label>
+            <button type="submit">Send</button>
+        </form>
+        
+        <div class="qr-code">
+            <h3>Scan to Connect</h3>
+            <div id="qr-code"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Maina Zaquir. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
